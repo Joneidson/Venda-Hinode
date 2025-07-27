@@ -1,41 +1,185 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-      <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-      <link rel="icon" href="https://hinodeonlineio.vteximg.com.br/arquivos/favicon.png" type="image/x-icon">
-        <title> Pasta Dental</title>
-      </head>
-      <style>
-        body {
-          background-color: black;
-        }
-        h1 {
-          color: white;
-          font-size: 120px;
-          text-align: center;
-          border: 5px solid white
-        }
-        p  {color: white;
-          font-size:50px;
-          text-align: center;
-          border: 5px solid white
-        }
-      </style>
-      <h1>Só hoje Você tera a oportunidade de mudar a sua vida !! </h1>
-      <p> A vida dos seus dentes!!</p>
-      <div style=" display:flex; align-items: flex-start ; text-align:-webkit-center">
-        <img src="https://hinodegroup.vtexassets.com/arquivos/ids/158048-1600-auto?v=637499492034700000&width=1600&height=auto&aspect=true" width="550" height="700">
-        <p style="font-size: 60px; text-align: center">Descrição do produto:<br>Hinode Pro White Gel Dental Hinode.
-        O Gel Dental Pro White da Hinode é o produto ideal para quem quer contar com dentes muito mais brancos e saudáveis.<br>
-        As micropartículas do Gel Dental Pro White agem diretamente nos seus dentes, deixando-os mais brancos e limpos .<br>
-        Além disso, Pro White foi desenvolvido para que sua eficácia lhe proteja contra cáries e placas bacterianas,<br>
-        dando a saúde necessária para o alcance de uma boca completamente saudável.<br>
-        O gel ainda preserva o esmalte dos seus dentes e combate o mau hálito.
-        </p>
-      </div>
-      <h1 style="font-size: 100px;">Bom e barato !!</h1>
-      <h1 style="font-size: 60px">
-        Valor: $15 mixaria!<br>
-        Fale comigo agora quantos você vai pegar kkkk
-      </h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pasta Dental - Hinode Pro White</title>
+  <link rel="icon" href="https://hinodeonlineio.vteximg.com.br/arquivos/favicon.png" type="image/x-icon" />
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+      border: 5px solid #fff;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      box-shadow: 0 8px 15px rgba(255, 255, 255, 0.4);
+      transition: box-shadow 0.3s ease;
+    }
+
+    h1:hover {
+      box-shadow: 0 12px 30px rgba(255, 255, 255, 0.7);
+    }
+
+    /* Ajustando tamanhos específicos de títulos */
+    h1.large {
+      font-size: 100px;
+    }
+
+    h1.xlarge {
+      font-size: 120px;
+    }
+
+    h1.medium {
+      font-size: 60px;
+    }
+
+    p.description {
+      font-size: 1.25rem;
+      max-width: 600px;
+      text-align: justify;
+      border: 5px solid #fff;
+      padding: 20px;
+      margin-left: 30px;
+      line-height: 1.5;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      flex: 1;
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+      transition: box-shadow 0.3s ease;
+    }
+
+    p.description:hover {
+      box-shadow: 0 12px 35px rgba(255, 255, 255, 0.6);
+    }
+
+    .container {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin-bottom: 40px;
+    }
+
+    .container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(255, 255, 255, 0.35);
+      flex: 1;
+      max-height: 700px;
+      object-fit: contain;
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .container img:hover {
+      box-shadow: 0 16px 40px rgba(255, 255, 255, 0.7);
+      transform: scale(1.05);
+    }
+
+    .price-info {
+      text-align: center;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 20px rgba(255, 215, 0, 0.6);
+      padding: 15px 30px;
+      border-radius: 15px;
+      background: rgba(255, 215, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .price-info:hover {
+      box-shadow: 0 14px 45px rgba(255, 215, 0, 0.9);
+      background: rgba(255, 215, 0, 0.2);
+    }
+
+    .price-info p {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #FFD700; /* cor ouro para destaque */
+      margin-bottom: 10px;
+    }
+
+    .price-info small {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #fff8b3;
+    }
+
+    /* Responsividade */
+    @media (max-width: 900px) {
+      h1.xlarge {
+        font-size: 70px;
+      }
+      h1.large {
+        font-size: 60px;
+      }
+      h1.medium {
+        font-size: 40px;
+      }
+      .container {
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+      p.description {
+        margin-left: 0;
+        max-width: 100%;
+      }
+      .container img {
+        max-height: 400px;
+      }
+      .price-info {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="xlarge">Só hoje você terá a oportunidade de mudar a sua vida!!</h1>
+
+  <div class="container">
+    <img 
+      src="https://hinodegroup.vtexassets.com/arquivos/ids/158048-1600-auto?v=637499492034700000&width=1600&height=auto&aspect=true" 
+      alt="Hinode Pro White Gel Dental"
+      loading="lazy"
+    />
+    <p class="description">
+      <strong>Descrição do produto:</strong><br />
+      Hinode Pro White Gel Dental é o produto ideal para quem deseja dentes mais brancos e saudáveis.<br /><br />
+      As micropartículas do Gel Dental Pro White atuam diretamente nos seus dentes, deixando-os mais limpos e brilhantes.<br /><br />
+      Além disso, o Pro White protege contra cáries e placas bacterianas, garantindo a saúde completa da sua boca.<br /><br />
+      O gel preserva o esmalte dental e combate o mau hálito, proporcionando um sorriso saudável e confiante.
+    </p>
+  </div>
+
+  <h1 class="large">Bom e barato!!</h1>
+
+  <div class="price-info">
+    <p>Valor: <span>$15 mixaria!</span></p>
+    <small>Fale comigo agora e diga quantos você vai querer! 😄</small>
+  </div>
+</body>
 </html>
